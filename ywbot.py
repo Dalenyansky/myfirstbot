@@ -25,8 +25,5 @@ def start_message(message):
     if "?" in message.text:
         bot.send_voice(message.chat.id, ques[x])
 
-    if "секретик" in message.text:
-        niz = open('nika.jpg', 'rb')
-        bot.send_photo(message.chat.id, niz )
 
 bot.polling(none_stop=True, interval=0)
