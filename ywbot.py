@@ -14,7 +14,7 @@ def get_text_messages(message):
 
 @bot.message_handler(content_types=['text'])
 def start_message(message):
-    x = randint(0, 4)
+    x = randint(0, 5)
     ans1 = open('yes.ogg', 'rb')
     ans2 = open('no.ogg', 'rb')
     ans3 = open('haha.ogg', 'rb')
